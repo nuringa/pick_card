@@ -1,7 +1,6 @@
-suits = %w[Крестей Пик Бубей Червей]
-faces = %w[Двойка Тройка Четверка Пятерка Шестерка Семерка Восьмерка Девятка
-           Десятка Валет Дама Король Туз]
+suit_pictures = %w(♦ ♠ ♥ ♣)
+faces = %w(2 3 4 5 6 7 8 9 10 J Q K A)
 
-deck = faces.product(suits)
+deck = faces.product(suit_pictures)
 
-puts deck.sample.join(' ')
+puts deck.sample.join
